@@ -1,0 +1,72 @@
+/* Konteyner o'lchami */
+.container {
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Rasm va hover (kattalashish) effekti */
+.button-div img {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.button-div img:hover {
+  transform: scale(1.3);
+}
+
+/* Ro'yxat elementlari hover effekti */
+.list-group-item {
+  transition: 0.5s;
+}
+
+.list-group-item:hover {
+  background-color: #ccc;
+}
+
+/* Tahrirlash oynasi (Modal) dizayni */
+.todo-modal {
+  max-width: 500px;
+  width: 100%;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+/* Qoraytirilgan orqa fon */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(29, 28, 28, 0.5);
+  backdrop-filter: blur(1px);
+}
+
+/* Modalni yopish tugmasi */
+#close-modal {
+  cursor: pointer;
+}
+
+/* Elementlarni yashirish uchun universal klass */
+.hidden {
+  display: none !important;
+}
+
+/* Ikonkalarning umumiy holati uchun */
+.todos-icon img {
+    cursor: pointer; /* Sichqoncha ustiga borganda barmoq (kliklash) shakliga kirishi uchun */
+    transition: all 0.3s ease; /* O'zgarishlar birdan emas, 0.3 soniya ichida silliq o'tishi uchun */
+}
+
+/* Sichqoncha ikonka ustiga kelganda (hover) nima bo'lishi */
+.todos-icon img:hover {
+    transform: scale(1.15); /* Ikonkani biroz (15% ga) kattalashtirish */
+    opacity: 0.8; /* Ikonkani biroz xiralashtirish (ixtiyoriy) */
+}
+.completed {
+  opacity: 50%;
+}
+
